@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ng Jia Huang - Resume</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            color: #3498db;
+            font-size: 26px;
+            margin-bottom: 5px;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin: 2px 0;
+        }
+
+        .contact-info p:before {
+            content: '✉️  ';
+            font-size: 14px;
+            color: #333;
+        }
+
+        .contact-info p:nth-child(2):before {
+            content: '📞  ';
+        }
+
+        .profile-summary {
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid #3498db;
+        }
+
+        .profile-summary p {
+            margin: 5px 0;
+        }
+
+        section h2 {
+            color: #333;
+            background-color: #f1f1f1;
+            padding: 5px;
+            margin: 0 -20px 10px -20px;
+            border-left: 4px solid #3498db;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+
+        .skills ul,
+        .hobby ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skills li,
+        .hobby li {
+            background-color: #3498db;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .rating-bar {
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            height: 10px;
+            width: 100%;
+            margin: 5px 0;
+            overflow: hidden;
+        }
+
+        .rating {
+            height: 100%;
+            border-radius: 5px;
+            background-color: #3498db;
+            text-align: right;
+            line-height: 10px;
+            transition: width 0.5s ease-in-out;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Ng Jia Huang</h1>
+        </header>
+
+        <div class="contact-info">
+            <p>isaacjiahuang@outlook.com</p>
+            <p>011-10770848</p>
+        </div>
+
+        <div class="profile-summary">
+            <p>
+                I am a student at Multimedia University Cyberjaya, majoring in Computer Science.
+                A fast learner and hard worker with high responsibility is seeking for a job opportunity during semester break.
+            </p>
+        </div>
+
+        <section class="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>Bachelor of Computer Science (Hons)</strong>
+                    <p>Multimedia University [08/2023 - present]</p>
+                </li>
+                <li>
+                    <strong>Foundation in Information Technology</strong>
+                    <p>Multimedia University [08/2022 - 07/2023]</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="experience">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>
+                    <strong>Recruiter Intern, Infrastructure Services Team</strong>
+                    <p>Panda Software House Sdn Bhd [02/10/2023 - 27/10/2023]</p>
+                    <ul>
+                        <li>Configured and managed server setups</li>
+                        <li>Operated and maintained Handheld Terminals</li>
+                        <li>Assisted in internetworking tasks</li>
+                        <li>Performed machine troubleshooting and repair</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="language">
+            <h2>Languages</h2>
+            <ul>
+                <li>
+                    <span>Chinese (Native)</span>
+                    <div class="rating-bar"><div class="rating" style="width:100%;"></div></div>
+                </li>
+                <li>
+                    <span>English (Fluent)</span>
+                    <div class="rating-bar"><div class="rating" style="width:80%;"></div></div>
+                </li>
+                <li>
+                    <span>Bahasa Melayu (Conversational)</span>
+                    <div class="rating-bar"><div class="rating" style="width:60%;"></div></div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>C++</li>
+                <li>Python</li>
+            </ul>
+        </section>
+
+        <section class="hobby">
+            <h2>Hobbies & Interests</h2>
+            <ul>
+                <li>Singing</li>
+                <li>Music</li>
+                <li>Piano</li>
+                <li>Drums</li>
+                <li>Chess</li>
+                <li>Basketball</li>
+                <li>Badminton</li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>
